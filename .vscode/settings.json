@@ -1,32 +1,44 @@
 {
+  "[jsx]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
-  "eslint.validate": [
-    "json",
-    "jsonc",
-    "javascript"
-  ],
+  "eslint.validate": ["json", "jsonc", "javascript"],
   "prettier.printWidth": 240,
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.tabWidth": 2,
   "prettier.bracketSpacing": true,
-  "prettier.endOfLine": "lf"
+  "prettier.endOfLine": "lf",
+  "[jsonl]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
