@@ -49,3 +49,17 @@ export const effect = (fn) => {
 
   executeFn()
 }
+
+export class Computed {
+  #fn = () => {}
+
+  constructor(fn) {
+    this.#fn = fn
+  }
+
+  get value() {
+    return this.#fn()
+  }
+}
+
+export const computed = (fn) => new Computed(fn)

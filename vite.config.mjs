@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite'
 
-console.log(new URL('./src', import.meta.url).pathname)
-
 export default defineConfig({
   root: './src',
   resolve: {
@@ -11,7 +9,7 @@ export default defineConfig({
   },
   esbuild: {
     jsxFactory: 'jsx',
-    jsxInject: 'import { jsx } "@/core/jsx-runtime"',
+    jsxInject: 'import { jsx } from "@/core/jsx-runtime.js"',
   },
   server: {
     open: 'index.html',
