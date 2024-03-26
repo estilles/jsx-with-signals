@@ -48,4 +48,4 @@ export const jsx = (tag, props, ...children) => {
   return element
 }
 
-export const render = (node, component) => node.appendChild(component)
+export const render = (component, node) => node.appendChild(component)
